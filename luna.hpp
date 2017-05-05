@@ -68,7 +68,7 @@ public:
 		return ud->pT;  // pointer to T object
 	}
 
-	private:
+private:
 	Luna();  // hide default constructor
 
 	// member function dispatcher
