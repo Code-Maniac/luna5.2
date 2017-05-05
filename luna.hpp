@@ -20,7 +20,7 @@ public:
 		// scripts can add functions written in Lua.
 		lua_pushstring(L, T::className);
 		lua_pushvalue(L, methods);
-		lua_settable(L, LUA_GLOBALSINDEX);
+		lua_setglobal(L, T::className);
 
 		lua_pushliteral(L, "__metatable");
 		lua_pushvalue(L, methods);
